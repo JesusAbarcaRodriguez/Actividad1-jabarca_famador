@@ -1,6 +1,6 @@
 body {
     font-family: "Oswald", sans-serif;
-    background: black;
+    background: linear-gradient(to bottom, #273850,#000000,#191C20) no-repeat;;
     /* Pattern from https://www.heropatterns.com/ */
     color: #1e272e;
     color: #fff;
@@ -43,11 +43,9 @@ ul{
     flex: 1;
 }
 .nav-main {
-    background-color:#283E51 ;
+    background-color:white ;
     font-size: 17px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 60px;
 }
 .nav-brand {
@@ -59,7 +57,7 @@ ul{
 }
 .nav-main ul li a {
     padding: 2px;
-    color: aqua;
+    color: black;
 }
 .nav-main ul li {
     padding: 10px;
@@ -69,10 +67,9 @@ ul{
 }
 .nav-main ul.nav-menu {
     flex: 1;
-    margin-left: 200px;
 }
 .aside{
-    height: 500px;
+    height: 850px;
     width: 200px;
     float: left;
     display: inline;
@@ -86,10 +83,33 @@ ul{
 }
 .productSection{
     height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.articleProductSection{
+    margin-bottom: 3rem;
+    height: 6rem;
+    width: 80%;
+    grid-column: 1/ 2;
+    color:#2F80ED;
+}
+.divProductSection{
+    background: linear-gradient(to bottom, #000428,#004E92) no-repeat;
+    height: 2.5rem;
+    width: 50%;
+    grid-column: 1/ 2;
+}
+.imgProductSection{
+    background-color: darkorange;
+    height: 2rem;
+    width: 90%;
+    grid-column: 2/ 2;
+    grid-row: 1;
 }
 .footer{
     height: 80px;
-    background-color: #4B79A1;
+    background: linear-gradient(to bottom, #BDC3C7,#D9D9D9) no-repeat;
 }
 .button {
     padding: 10 22 10 22;
@@ -100,7 +120,38 @@ ul{
     font-size: 15pt;
     font-weight: bold;
 }
+.buttonAside{
+    padding: 10 22 10 22;
+    margin-top: 50;
+    border-width: 2;
+    background-color: #1E266C;
+    font-family: "Lucida Console", Helvetica, Arial, sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    color: white;
+}
+.buttonProductSection{
+    padding: 10 22 10 22;
+    margin-left: 70px;
+    margin-top: 8px;
+    border-width: 2;
+    background-color: white;
+    font-family: "Lucida Console", Helvetica, Arial, sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    color: black; 
+}
+.buttonAside:hover {
+    background-color: #3a3a3a;
+}
 
+.buttonAside:pressed, .button:default:hover:pressed {
+    background-color: green;
+    text-fill: #1d1d1d;
+}
+.buttonAside:default:hover {
+    background-color: derive(focus-color,30%);
+}
 .button:hover {
     background-color: #3a3a3a;
 }
