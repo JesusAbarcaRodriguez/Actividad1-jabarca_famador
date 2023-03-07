@@ -19,7 +19,7 @@ ul{
     background-color:white;
 }
 .nav-mainMenu {
-    background-color: blue;
+    background: linear-gradient(to bottom, #1E266C,#000428,#161D59,#1A2163) no-repeat;
     font-size: 17px;
     display: flex;
     justify-content: space-between;
