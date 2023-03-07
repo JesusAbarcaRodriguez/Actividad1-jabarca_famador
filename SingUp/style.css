@@ -1,0 +1,43 @@
+html{
+    font-size: 20px;
+
+    height: 100%;
+}
+body{
+    background: linear-gradient(to bottom,#2F80ED,#1D5299,#091E3A,#2D9EE0) no-repeat ;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    justify-content: center;
+    background: linear-gradient(to bottom,#FAFDFF,#C2C5FE) no-repeat ;
+    border-radius: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+header{
+    background: linear-gradient(to bottom,#020078,#020078) no-repeat ;
+    height: 2rem;
+    width: 100%;
+    grid-column: 1/ span 2;
+}
+.singup{
+    position: relative;
+    padding: 1rem;
+    grid-column: 2 / 1;
+    grid-row: 2;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    grid-column: 2 / 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
