@@ -2,6 +2,10 @@ html{
     font-size: 20px;
 
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 body{
     background: linear-gradient(to bottom,#2F80ED,#1D5299,#091E3A,#2D9EE0) no-repeat ;
@@ -13,31 +17,87 @@ body{
 }
 .main{
     justify-content: center;
-    background: linear-gradient(to bottom,#FAFDFF,#C2C5FE) no-repeat ;
-    border-radius: 1em;
+    background: linear-gradient(to bottom,#C2C5FE,#FAFDFF) no-repeat ;
+    border-radius: 2em ;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    grid-row-gap: 0;
 }
 header{
     background: linear-gradient(to bottom,#020078,#020078) no-repeat ;
-    height: 2rem;
+    height: 3rem;
     width: 100%;
     grid-column: 1/ span 2;
+    border-radius: 2em 2em 0 0;
 }
 .singup{
     position: relative;
-    padding: 1rem;
-    grid-column: 2 / 1;
-    grid-row: 2;
+    padding: 0.5rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
     justify-content:center;
     display: flex;
     flex-direction: column;
 }
-.img{
-    grid-column: 2 / 2;
-    grid-row: 2;
-    display: flex;
-    align-items: center;
+
+.shadow1{
+margin-bottom: 0 ;
+grid-column: 2 / 4;
+grid-row: 2;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+input{
+    width:20em;
+    height: 4em;
+    background: #e0dede;
+    justify-content: flex-start;
+    display:  flex;
+    margin: 0.5em auto;
+    padding: 10px;
+    border: none;
+    border-radius: 0.8rem;
+}
+button{
+    width: 10em;
+    height: 2.5em;
+    margin: 1rem auto;
     justify-content: center;
+    display: block;
+    color :#fff;
+    background: #0502B7;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 0.8rem;
+    transition: .2s ease-in;
+    cursor: pointer;
+
+}
+Label{
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+
+}
+p{
+    font-size:1.5em;
+}
+.shade{
+    grid-column:2 / 2;
+    grid-row: 3/4;
+    background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(2, 2, 2, 0.99236) 17.19%, rgba(3, 3, 3, 0.984056) 32.81%, rgba(23, 23, 23, 0.895833) 50%, rgba(38, 38, 38, 0.822917) 75%, rgba(217, 217, 217, 0) 100%);
+    z-index: 1;
+    height: 2em;
+    margin-top: 0;
 }
