@@ -19,28 +19,37 @@ ul{
     background-color:white;
 }
 .nav-mainMenu {
-    background: linear-gradient(to bottom, #1E266C,#000428,#161D59,#1A2163) no-repeat;
+    background: linear-gradient(to left, #1E266C,#000428,#161D59,#1A2163) no-repeat;
     font-size: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     padding: 20px 0;
+    color: white;
 }
 .nav-mainMenu ul {
     display: flex;
+    color: white;
 }
 .nav-mainMenu ul li a {
     padding: 2px;
 }
 .nav-mainMenu ul li {
     padding: 50px;
+    color: white;
 }
 .nav-mainMenu ul li a:hover {
     border-bottom: 2px solid #fff;
 }
 .nav-mainMenu ul.nav-ul-mainMenu{
     flex: 1;
+}
+.inputMainMenu{
+    margin-right: 20rem;
+}
+.loginMainMenu{
+    margin-right: 10rem;
 }
 .nav-main {
     background-color:white ;
@@ -85,7 +94,6 @@ ul{
     height: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
 }
 .articleProductSection{
     margin-bottom: 3rem;
@@ -95,17 +103,20 @@ ul{
     color:#2F80ED;
 }
 .divProductSection{
-    background: linear-gradient(to bottom, #000428,#004E92) no-repeat;
-    height: 2.5rem;
-    width: 50%;
+    background: linear-gradient(to bottom, #004E92 ,#000428) no-repeat;
+    height: 4rem;
+    width: 40%;
     grid-column: 1/ 2;
 }
 .imgProductSection{
-    background-color: darkorange;
-    height: 2rem;
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 12rem;
     width: 90%;
     grid-column: 2/ 2;
-    grid-row: 1;
+    grid-row: 1/4;
 }
 .footer{
     height: 80px;
@@ -139,7 +150,7 @@ ul{
     font-family: "Lucida Console", Helvetica, Arial, sans-serif;
     font-size: 15pt;
     font-weight: bold;
-    color: black; 
+    color: black;
 }
 .buttonAside:hover {
     background-color: #3a3a3a;
@@ -162,4 +173,7 @@ ul{
 }
 .button:default:hover {
     background-color: derive(focus-color,30%);
+}
+.fi fi-sr-home{
+    width: 50px ;
 }
