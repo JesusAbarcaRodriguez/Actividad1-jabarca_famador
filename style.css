@@ -94,10 +94,22 @@ ul{
     color: white;
 }
 .section1{
+    position: relative;
+
     height: 200px;
+    background: linear-gradient(90deg, #01092F 42.38%, rgba(54, 54, 54, 0.250556) 99%);
     background-image: url("img/fondoMar.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
+    background-size: 50% 100%;
+}
+.section1::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    left: 100;
+    top:100;
+    background: linear-gradient(90deg, #01092F 42.38%, rgba(54, 54, 54, 0.250556) 99%);
     background-size: cover;
 }
 .productSection{

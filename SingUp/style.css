@@ -10,6 +10,8 @@ html{
 body{
     background: linear-gradient(to bottom,#2F80ED,#1D5299,#091E3A,#2D9EE0) no-repeat ;
     background-size: cover;
+    height: 100%;
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -18,12 +20,34 @@ body{
 .main{
     justify-content: center;
     background: linear-gradient(to bottom,#C2C5FE,#FAFDFF) no-repeat ;
+    background-size: cover;
     border-radius: 2em ;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     grid-row-gap: 0;
 }
+    @media (max-width: 1200px) {
+        body{
+            align-items: center;
+            margin:0;
+            padding:0;
+        }
+    .main{
+        display:block;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+       margin-left: 2rem;
+       margin-right: 2rem;
+        justify-content: center;
+      }
+
+    .shadow1{
+        height: 13rem;
+        width: 100%;
+    }
+    }
+
 header{
     background: linear-gradient(to bottom,#020078,#020078) no-repeat ;
     height: 3rem;
@@ -101,3 +125,4 @@ p{
     height: 2em;
     margin-top: 0;
 }
+
