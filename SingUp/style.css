@@ -1,13 +1,9 @@
-html{
+html,body{
     font-size: 20px;
-
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-body{
     background: linear-gradient(to bottom,#2F80ED,#1D5299,#091E3A,#2D9EE0) no-repeat ;
     background-size: cover;
     height: 100%;
@@ -29,17 +25,27 @@ body{
 }
     @media (max-width: 1200px) {
         body{
+            font-size: 20px;
             align-items: center;
             margin:0;
             padding:0;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
         }
     .main{
         display:block;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-       margin-left: 2rem;
-       margin-right: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
         justify-content: center;
+      }
+
+      input{
+        height: 3em;
+        width: 15em;
       }
 
     .shadow1{
