@@ -41,7 +41,11 @@ html,body{
         margin-left: 2rem;
         margin-right: 2rem;
         justify-content: center;
-      }
+}
+input{
+    height: 1em;
+    width: 15em;
+}
 
       input{
         height: 3em;
@@ -87,7 +91,6 @@ input{
     justify-content: flex-start;
     display:  flex;
     margin: 0.5em auto;
-    padding: 10px;
     border: none;
     border-radius: 0.8rem;
 }
