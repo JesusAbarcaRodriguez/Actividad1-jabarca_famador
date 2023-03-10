@@ -9,6 +9,8 @@ html,body {
     /* Pattern from https://www.heropatterns.com/ */
     color: #1e272e;
     color: #fff;
+    position: relative;
+    padding-bottom: 0.1rem;
 }
 ul{
     list-style: none;
@@ -23,18 +25,19 @@ ul{
 }
 @media (max-width: 1200px) {
     .main{
+        height: 100%;
+        width: 85%;
         display: block;
         float: left;
     }
 }
 .footer{
+    background: linear-gradient(180deg, #BDC3C7 0%, #2C3E50 101.37%);
+    position: absolute;
+    bottom: 0;
     height: 6.5rem;
     width: 100%;
-    background: linear-gradient(180deg, #BDC3C7 0%, #2C3E50 101.37%);
     border-radius: 11px;
-    float: left;
-    display: inline;
-    align-items: center;
 }
 .divFooter{
     margin-top: -1rem;
@@ -45,25 +48,30 @@ ul{
 @media (max-width: 1200px) {
     .footer{
         flex-direction: column;
-        text-align: center;
+    }
+    .divFooter{
+        align-items: center;
+        margin-left: 0;
     }
 }
 .nav-main {
     background: linear-gradient(to left, #1E266C,#000428,#161D59,#1A2163) no-repeat;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
+    height: 8%;
     padding: 1rem 0;
     color: white;
 }
 @media (max-width: 1200px) {
     .nav-main{
-        flex-direction: column;
+        height: auto;
         text-align: center;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         align-items: center;
+        display: flex;
     }
     .inputMain{
         margin-right:0;
@@ -86,9 +94,7 @@ ul{
 .nav-main ul li a:hover {
     border-bottom: 2px solid #fff;
 }
-.nav-main ul.nav-ul-main{
-    flex: 1;
-}
+
 .inputMain{
     width:5rem;
     height: 2rem;
@@ -101,16 +107,8 @@ ul{
 .nav_main_menu {
     background-color:white ;
     display: flex;
-    height: 3rem;
-}
-@media (max-width: 1200px) {
-    .nav_main_menu{
-        flex-direction: column;
-        text-align: center;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        align-items: center;
-    }
+    flex-direction: column;
+    height: 8%;
 }
 .nav-brand {
     width: 2.5rem;
@@ -121,7 +119,7 @@ ul{
 }
 .nav_main_menu ul li a {
     padding: 2px;
-    color: black;
+    color: #2F80ED;
 }
 .nav_main_menu ul li {
     padding: 0.5rem;
@@ -129,9 +127,18 @@ ul{
 .nav_main_menu ul li a:hover {
     border-bottom: 2px solid #fff;
 }
-.nav_main_menu ul.nav- {
-    flex: 1;
+
+@media (max-width: 1200px) {
+    .nav_main_menu{
+        height: auto;
+        align-items: center;
+        list-style: none;
+    }
+    .nav_main_menu ul {
+        display: block;
+    }
 }
+
 .aside{
     height: 82%;
     width: 15%;
@@ -141,8 +148,11 @@ ul{
 }
 @media (max-width: 1200px) {
     .aside{
-        height: 4rem;
+        height: 82%;
         margin-bottom: 5rem;
+    }
+    .h2Aside{
+        margin-top: 5rem;
     }
 }
 .h2Aside{
@@ -173,14 +183,14 @@ ul{
     z-index: -1;
 }
 .productSection{
-    height: 4rem;
+    height: 68%;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     margin-bottom: 10rem;
 }
 @media (max-width: 1200px) {
     .productSection{
-        height: 10rem;
+        height: 38%;
         display:block;
         margin-bottom: 15rem;
         align-items: center;
