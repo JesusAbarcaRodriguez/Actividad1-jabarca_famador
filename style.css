@@ -1,3 +1,4 @@
+
 body {
     font-family: "Oswald", sans-serif;
     background: linear-gradient(to bottom, #273850,#000000,#191C20) no-repeat;;
@@ -99,6 +100,15 @@ ul{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.section1::before{
+    content: "";
+    width: 78%;
+    height: 12.5rem;
+    min-height: 10vh;
+    position: absolute;
+    background: linear-gradient(89.92deg, #01092F 42.38%, rgba(54, 54, 54, 0.250556) 99%);
+    border-radius: 10px;
 }
 .productSection{
     height: 200px;
