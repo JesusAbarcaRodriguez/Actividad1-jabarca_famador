@@ -3,90 +3,94 @@ html,body{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     background: linear-gradient(to bottom,#2F80ED,#1D5299,#091E3A,#2D9EE0) no-repeat ;
-    background-size: cover;
-    height: 100%;
+    background-size: cover;;
     width: 100%;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .main{
-    justify-content: center;
-    background: linear-gradient(to bottom,#C2C5FE,#FAFDFF) no-repeat ;
+    background: linear-gradient(360deg, #FAFDFF 2.9%, #A8A9BB 87.6%);
+    border-radius: 30px;
     background-size: cover;
     border-radius: 2em ;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     grid-row-gap: 0;
-}
-    @media (max-width: 1200px) {
-        body{
-            font-size: 20px;
-            align-items: center;
-            margin:0;
-            padding:0;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
-    .main{
-        display:block;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        justify-content: center;
-}
-input{
-    height: 1em;
-    width: 15em;
-}
+    top: 3rem;
+    bottom: 3rem;
+    height: 45rem;
+    width: auto;
+    min-height: 30%;
+    max-height: 80%;
 
-      input{
-        height: 3em;
-        width: 15em;
-      }
-
-    .shadow1{
-        height: 13rem;
-        width: 100%;
-    }
-    }
-
+ 
+}
+.btnExit{
+    background: rgba(106, 106, 106, 0.963028);
+    border-radius: 25px;
+    float: right;
+    width: 10em;
+    height: 2.5em;
+    margin: 1rem auto;
+    justify-content: center;
+    display: block;
+}
+figure{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 header{
     background: linear-gradient(to bottom,#020078,#020078) no-repeat ;
+    background-size: cover;
     height: 3rem;
     width: 100%;
     grid-column: 1/ span 2;
     border-radius: 2em 2em 0 0;
+    position: relative;
+}
+.icon{
+    position: absolute;
+    left: 1rem;
+    top: 0.3rem;
+    height: 2.7rem;
+
 }
 .singup{
+    
     position: relative;
     padding: 0.5rem;
     grid-column: 1 / 2;
     grid-row: 2 / 4;
-    justify-content:center;
+    justify-content:initial;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
-.shadow1{
-margin-bottom: 0 ;
-grid-column: 2 / 4;
-grid-row: 2;
-display: flex;
-align-items: center;
-justify-content: center;
-}
+.image{
 
+    display: flex;
+    flex-direction: column;
+  
+ 
+}
+.img{
+    display: block;
+    margin-bottom: 0 ;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    justify-content:right;
+}
 input{
     width:20em;
     height: 4em;
+    max-width:20em;
+    max-height: 4em;
     background: #e0dede;
     justify-content: flex-start;
     display:  flex;
@@ -94,7 +98,7 @@ input{
     border: none;
     border-radius: 0.8rem;
 }
-button{
+.btnSingUp{
     width: 10em;
     height: 2.5em;
     margin: 1rem auto;
@@ -127,11 +131,76 @@ p{
     font-size:1.5em;
 }
 .shade{
-    grid-column:2 / 2;
-    grid-row: 3/4;
+
     background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(2, 2, 2, 0.99236) 17.19%, rgba(3, 3, 3, 0.984056) 32.81%, rgba(23, 23, 23, 0.895833) 50%, rgba(38, 38, 38, 0.822917) 75%, rgba(217, 217, 217, 0) 100%);
     z-index: 1;
     height: 2em;
     margin-top: 0;
+    width: 60%;
 }
+
+@media (max-width: 1200px) {
+    body{
+        font-size: 30px;
+        align-items: center;
+        margin:0;
+        padding:0;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    header{
+        position: relative;
+        height: 5rem;
+        
+    }
+    Label{
+        font-size: 1em;
+    }
+    p{
+        font-size:1em;
+    }
+.main{
+    height: auto;
+    width: auto;
+    max-height: 95%;
+    display:flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+}
+input{
+height: 10%;
+width: 15em;
+font-size: 25px;
+}
+.btnSingUp{
+    height: 10%;
+  
+
+}
+.img{
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.image{
+    height: 30%;
+    width: 60%;
+    align-items: center;
+}
+.shade{
+    background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(2, 2, 2, 0.99236) 17.19%, rgba(3, 3, 3, 0.984056) 32.81%, rgba(23, 23, 23, 0.895833) 50%, rgba(38, 38, 38, 0.822917) 75%, rgba(217, 217, 217, 0) 100%);
+    z-index: 1;
+    height: 3em;
+    width: 80%;
+    margin-top: 0;
+}
+}
+
 
