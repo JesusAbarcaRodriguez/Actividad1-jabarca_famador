@@ -1,3 +1,4 @@
+
 html,body {
     font-size: 20px;
     height: 100%;
@@ -8,18 +9,16 @@ html,body {
     background: linear-gradient(to bottom, #273850,#000000,#191C20) no-repeat;;
     /* Pattern from https://www.heropatterns.com/ */
     color: #1e272e;
-    color: #fff;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+    color: white;
+    position: relative;
+    padding-bottom: 0.1rem;
 }
-
 ul{
     list-style: none;
 }
 .main {
     margin-top: 3rem;
-    height: 80%;
+    height: 85%;
     width: 85%;
     float: left;
     display: inline;
@@ -27,7 +26,7 @@ ul{
 }
 @media (max-width: 1200px) {
     .main{
-        height: 100%;
+        height: 80%;
         width: 85%;
         display: block;
         float: left;
@@ -40,7 +39,7 @@ ul{
     height: 6.5rem;
     width: 100%;
     border-radius: 11px;
-    margin-top: auto;
+    float: left;
 }
 .divFooter{
     margin-top: -1rem;
@@ -67,22 +66,7 @@ ul{
     padding: 1rem 0;
     color: white;
 }
-@media (max-width: 1200px) {
-    .nav-main{
-        height: auto;
-        text-align: center;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        align-items: center;
-        display: flex;
-    }
-    .inputMain{
-        margin-right:0;
-    }
-    .loginMain{
-        margin-right: 0;
-    }
-}
+
 .nav-main ul {
     display: flex;
     color: white;
@@ -101,12 +85,33 @@ ul{
 .inputMain{
     width:5rem;
     height: 2rem;
-    background: #e0dede;
+    background: white;
     justify-content: flex-start;
     display:  flex;
     margin: 0.5rem auto;
     border: none;
+    margin-right: 30rem;
 }
+.loginMain{
+    margin-right: 30rem;
+}
+
+@media (max-width: 1200px) {
+    .nav-main{
+        height: auto;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        align-items: center;
+    }
+    .inputMain{
+        margin-right:0;
+    }
+    .loginMain{
+        margin-right: 0;
+    }
+}
+
+
 .nav_main_menu {
     background-color:white ;
     display: flex;
@@ -138,12 +143,12 @@ ul{
         list-style: none;
     }
     .nav_main_menu ul {
-        display: block;
+        flex-direction: column;
     }
 }
 
 .aside{
-    height: 82%;
+    height: 50%;
     width: 15%;
     float: left;
     display: inline;
@@ -171,11 +176,7 @@ ul{
     position: relative;
     z-index: 1;
 }
-@media (max-width: 1200px) {
-    .sectionTitle{
-        align-items: center;
-    }
-}
+
 .sectionTitle::before{
     content: "";
     width: 100%;
@@ -185,11 +186,15 @@ ul{
     background: linear-gradient(89.92deg, #01092F 50%, rgba(54, 54, 54, 0.250556) 99%);
     z-index: -1;
 }
+@media (max-width: 1200px) {
+    .sectionTitle{
+        align-items: center;
+    }
+}
 .productSection{
-    height: 68%;
+    height: 50%;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
-    margin-bottom: 10rem;
 }
 @media (max-width: 1200px) {
     .productSection{
@@ -222,7 +227,7 @@ ul{
     width: 90%;
     grid-column: 2/ 2;
     grid-row: 1/4;
-    margin-top: 5.5rem;
+    margin-top: 4rem;
 
 }
 
@@ -255,4 +260,7 @@ button {
 }
 .buttonAside{
     background-color: #403DD6;
+}
+.fi fi-sr-home{
+    font-size: larger;
 }
