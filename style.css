@@ -65,6 +65,7 @@ ul{
     height: 8%;
     padding: 1rem 0;
     color: white;
+    position: relative;
 }
 
 .nav-main ul {
@@ -93,9 +94,13 @@ ul{
     margin-right: 30rem;
 }
 .loginMain{
-    margin-right: 30rem;
+    margin-right: 25rem;
 }
 
+.buttonMain{
+    float: right;
+    display: block;
+}
 @media (max-width: 1200px) {
     .nav-main{
         height: auto;
@@ -261,6 +266,6 @@ button {
 .buttonAside{
     background-color: #403DD6;
 }
-.fi fi-sr-home{
-    font-size: larger;
+.fi{
+    
 }
