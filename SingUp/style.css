@@ -39,6 +39,11 @@ html,body{
     justify-content: center;
     display: block;
 }
+.linkToLandingPages{
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+}
 figure{
     align-items: center;
     display: flex;
@@ -87,9 +92,8 @@ header{
     justify-content:right;
 }
 input{
-    width:20em;
+    width:90%;
     height: 4em;
-    max-width:20em;
     max-height: 4em;
     background: #e0dede;
     justify-content: flex-start;
@@ -100,18 +104,18 @@ input{
 }
 .btnSingUp{
     width: 10em;
-    height: 2.5em;
+    height: 2em;
     margin: 1rem auto;
     justify-content: center;
     display: block;
     color :#fff;
     background: #0502B7;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
     margin-top: 20px;
     outline: none;
     border: none;
-    border-radius: 0.8rem;
+    border-radius: 1rem;
     transition: .2s ease-in;
     cursor: pointer;
 
