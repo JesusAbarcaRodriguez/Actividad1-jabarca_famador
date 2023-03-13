@@ -43,6 +43,7 @@ figure{
     align-items: center;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 header{
     background: linear-gradient(to bottom,#020078,#020078) no-repeat ;
@@ -76,8 +77,7 @@ header{
 
     display: flex;
     flex-direction: column;
-  
- 
+    z-index: 2;
 }
 .img{
     display: block;
@@ -137,6 +137,9 @@ p{
     height: 2em;
     margin-top: 0;
     width: 60%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
 }
 
 @media (max-width: 1200px) {
